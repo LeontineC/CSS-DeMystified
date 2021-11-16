@@ -1,0 +1,100 @@
+:root {
+  --primary-color: #00a1ab;
+  --secondary-color: #3741a0;
+  --tertiary-color: #4e4e4e;
+  --light-color: #fff;
+  --background-primary: #E5E3E8;
+  --background-light: #FAFAFA;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-top: 3em;
+  margin-bottom: 0;
+}
+
+.text-accent {
+  color: var(--primary-color);
+}
+
+.fs-500 {
+  font-size: 1.3125rem;
+  margin-top: 0;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+}
+
+.plan {
+  width: 200px;
+  padding: 2em;
+  border-radius: 1em;
+  margin: 0 0.5em 2em 0.5em; /* added 2em margin-bottom */
+}
+
+.plan--light {
+  color: var(--tertiary-color);
+  background: linear-gradient(-45deg, var(--background-primary), var(--background-light));
+}
+
+.plan--accent {
+  color: var(--light-color);
+  background: linear-gradient(-45deg, var(--primary-color), var(--secondary-color));
+}
+
+.plan__title {
+  text-transform: uppercase;
+  margin: 0 0 1em;
+}
+
+.plan__price {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 900;
+  margin: 0;
+}
+
+.plan--light .plan__price {
+  color: var(--primary-color);
+}
+
+.plan__price span {
+  display: block;
+  font-size: 1.5625rem;
+  font-weight: 300;
+}
+
+.plan__description {
+  margin: 2em 0;
+  line-height: 1.5;
+}
+
+.button {
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 0.5em 0.75em;
+  border-radius: 0.25em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.plan--light .button {
+  background-color: var(--tertiary-color);
+  color: var(--light-color);
+}
+
+.plan--accent .button {
+  background-color: var(--light-color);
+  color: var(--tertiary-color);
+}
+
