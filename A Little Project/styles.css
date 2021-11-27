@@ -39,7 +39,7 @@ h1 {
 .container {  /*not centred*/
   width: 90%;
   max-width: 39rem;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .lead {
