@@ -1,0 +1,67 @@
+/* Font used
+font-family: 'PT Sans', sans-serif; 
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-base-100: #fff;
+  --clr-base-200: #e5e5e5;
+
+  --clr-accent-300: #59e89c;
+
+  --clr-dark-300: #333333;
+  --clr-dark-400: #171717;
+
+  --ff-base: "PT Sans", sans-serif;
+
+  --fw-light: 200;
+}
+
+body {
+  background: var(--clr-base-200);
+  font-family: var(--ff-base);
+  text-align: center;
+  width: 100vw;
+  margin: 0;
+  overflow: hidden;
+}
+
+.hero {
+  background-image: url("./assets/hero.jpg");
+  margin: 6em;
+  min-height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-textBox {
+  background: var(--clr-base-100);
+  max-width: 44vw;
+  padding: 1em 2em;
+}
+
+.hero-textBox-title {
+  font-weight: var(--fw-light);
+}
+
+.hero-textBox-p {
+  padding: 0 3em 1em 3em;
+  line-height: 1.5;
+}
+
+.hero-textBox-button {
+  background: var(--clr-accent-300);
+  display: inline-block;
+  padding: 1em 2em;
+  border: none;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
