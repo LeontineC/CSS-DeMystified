@@ -47,7 +47,7 @@ img {
 
 /* Utility classes */
 .flow-content > * + * {
-  margin-top: 1.25rem;
+  margin-top: var(--flow-space, var(--spacer));
 }
 
 .container {
@@ -59,14 +59,19 @@ img {
 .flex {
   display: flex;
   flex-direction: column;
- 
+}
+
+.flex > * + * {
+  margin: calc(var(--spacer) * 3) 0 0 0;
 }
 
 @media (min-width: 40em) {
    .flex {
      flex-direction: row;
     }
-
+   .flex > * + * {
+     margin: 0 0 0 var(--spacer);
+   }
 }
 
 .bg-dark {
@@ -74,8 +79,16 @@ img {
   background: var(--clr-neutral-900);
 }
 
+.shadow {
+  box-shadow: var(--box-shadow);
+}
+
 .accent {
   color: var(--clr-accent-400);
+}
+
+.flow-content--large {
+  --flow-space: 3rem;
 }
 
 /* general styling */
@@ -113,4 +126,29 @@ h1 span {
 
 section {
   padding: 4rem 0;
+}
+
+@media (min-width: 40rem) {
+  section {
+    padding: 8rem;
+  }
+}
+
+/*sections*/
+
+.join li::before{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    background: var(--clr-accent-400);
+    position: absolute;
+    transform: translate(-0.5rem, -0.5rem);
+    z-index: -1;
+}
+
+.cta {
+  background-image: url(assets/cta-bg.jpg);
+  background-size: cover;
+  text-align: center                jhnnnnnn;
 }
